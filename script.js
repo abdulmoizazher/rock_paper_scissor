@@ -4,6 +4,15 @@ function getcomputerchoice(){
 
 }
 
+function playgame(){
+    for(let i = 0; i <= 5; i++){
+
+        console.log(playRound(playerSelection, getcomputerchoice()));
+
+        //console.log("round"[i] + playRound());
+
+    }
+}
 function playRound( playerSelection,computerSelection)
 {
     
@@ -61,5 +70,4 @@ function playRound( playerSelection,computerSelection)
 }
 
 const playerSelection = "rock";
-const computerSelection = getcomputerchoice();
-console.log(playRound(playerSelection, computerSelection));
+playgame();
