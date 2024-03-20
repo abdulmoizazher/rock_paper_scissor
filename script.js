@@ -19,7 +19,7 @@ function playRound( playerSelection,computerSelection)
     playerSelection = playerSelection.toLowerCase();
     console.log(playerSelection);
     console.log(computerSelection);
-    if (playerSelection == computerSelection)
+    if (playerSelection === computerSelection)
     {
         return "tie";
     }
@@ -29,25 +29,26 @@ function playRound( playerSelection,computerSelection)
        switch(computerSelection)
        {
        case "rock":
-            if (playerSelection == "paper")
+            if (playerSelection === "paper")
             {
             return "you win";
             }
 
-            else if (playerSelection == "scissor"){
+            else if (playerSelection === "scissor")
+            {
                 return "you lose";
             }
             break;
 
         case "paper":
                 {
-                    if(playerSelection == "rock")
+                    if(playerSelection === "rock")
                     {
                         return "you win";
 
                     }
 
-                    else if ( playerSelection == "scissor")
+                    else if ( playerSelection === "scissor")
                     {
                         return "you lose";
                     }
@@ -55,11 +56,11 @@ function playRound( playerSelection,computerSelection)
                 break;
         case "scissor":
 
-            if(playerSelection == "paper")
+            if(playerSelection === "paper")
             {
                 return "you win";
             }
-            else if (playerSelection == "rock")
+            else if (playerSelection === "rock")
             {
                 return "you lose";
             }
