@@ -70,5 +70,36 @@ function playRound( playerSelection,computerSelection)
 
 }
 
+function element(name, className, attributes, innerText) {
+
+    const element = document.createElement(name);
+    element.setAttribute("class", className);
+
+    if (attributes) {
+
+        Object.keys(attributes).forEach(attr => {
+            element.setAttribute(attr, attributes[attr]);
+        })
+    }
+
+    if (!!innerText) element.innerText = innerText;
+
+    return element;
+
+}
+
+function appendChildren(element, children) {
+
+    children.forEach(c => {
+        element.appendChild(c);
+    });
+
+}
+
+
+
+
+
+
 const playerSelection = "rock";
 playgame();
