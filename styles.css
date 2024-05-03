@@ -9,26 +9,38 @@ body{
 
 
 .container {
+    display: flex;
     background-color: purple;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .body
 {   display: flex;
     flex-direction: row;
-    align-items: center;
+  
     justify-content: center;
+    
 }
 
 
 .sec {
     background-color: aliceblue;
     height: 30vh;
-    width: 25vh;
+    width: 30vh;
+    margin : 2vh;
+    border-radius: 300%;
     
 
+}
+
+.header {
+    background-color: brown;
+    height: 20vh;
+    display: flex;
+    align-self: flex-start;
+    width: 100vh;
 }
