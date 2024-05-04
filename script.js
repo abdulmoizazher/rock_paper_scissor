@@ -1,3 +1,4 @@
+let playerSelection = "";
 function getcomputerchoice(){
     let choice = ["rock", "paper" ,"scissor"];
     return (choice[(Math.floor(Math.random()*choice.length))]);
@@ -70,30 +71,15 @@ function playRound( playerSelection,computerSelection)
 
 }
 
-function element(name, className, attributes, innerText) {
 
-    const element = document.createElement(name);
-    element.setAttribute("class", className);
 
-    if (attributes) {
 
-        Object.keys(attributes).forEach(attr => {
-            element.setAttribute(attr, attributes[attr]);
-        })
-    }
-
-    if (!!innerText) element.innerText = innerText;
-
-    return element;
-
-}
-
-function appendChildren(element, children) {
-
-    children.forEach(c => {
-        element.appendChild(c);
-    });
-
+function setplayerselection (choice)
+{
+    
+    playerSelection = choice;
+    console.log(playRound(playerSelection,getcomputerchoice()))
+    
 }
 
 
@@ -101,5 +87,4 @@ function appendChildren(element, children) {
 
 
 
-const playerSelection = "rock";
-playgame();
+ 

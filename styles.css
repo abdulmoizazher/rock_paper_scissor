@@ -21,8 +21,8 @@ body{
 .body
 {   display: flex;
     flex-direction: row;
-  
     justify-content: center;
+    padding-top: 0vh;
     
 }
 
@@ -33,14 +33,62 @@ body{
     width: 30vh;
     margin : 2vh;
     border-radius: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 
 }
 
+button{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 300%;
+}
+
+.content 
+{
+    background-color: white;
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.content > p{
+    font-size: 7vh;
+}
+
 .header {
     background-color: brown;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     align-self: flex-start;
     width: 100vh;
+}
+
+.result {
+    background-color: black;
+    height: 10vh;
+    width: 70%;
+}
+
+#rock{
+    background-image: url("rock.png") ;
+    background-size: cover;
+}
+
+#paper{
+    background-image: url("paper.png");
+    background-size: cover;
+
+}
+
+#scissor{
+    background-image: url("scissor.jpg");
+    background-size: cover;
 }
