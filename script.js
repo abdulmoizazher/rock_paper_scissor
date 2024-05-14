@@ -18,8 +18,8 @@ function playRound( playerSelection,computerSelection)
 {
     
     playerSelection = playerSelection.toLowerCase();
-    console.log(playerSelection);
-    console.log(computerSelection);
+    //console.log(playerSelection);
+    //console.log(computerSelection);
     if (playerSelection === computerSelection)
     {
         return "tie";
@@ -78,9 +78,12 @@ function setplayerselection (choice)
 {
     
     playerSelection = choice;
+    document.getElementById("result").innerHTML=playRound(playerSelection,getcomputerchoice())
     console.log(playRound(playerSelection,getcomputerchoice()))
     
 }
+
+
 
 
 

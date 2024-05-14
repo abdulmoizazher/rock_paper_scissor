@@ -71,10 +71,14 @@ button{
     width: 100vh;
 }
 
-.result {
-    background-color: black;
+#result {
+    background-color: lightblue;
     height: 10vh;
     width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #rock{
