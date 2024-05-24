@@ -1,3 +1,4 @@
+let playerSelection = "";
 function getcomputerchoice(){
     let choice = ["rock", "paper" ,"scissor"];
     return (choice[(Math.floor(Math.random()*choice.length))]);
@@ -17,8 +18,8 @@ function playRound( playerSelection,computerSelection)
 {
     
     playerSelection = playerSelection.toLowerCase();
-    console.log(playerSelection);
-    console.log(computerSelection);
+    //console.log(playerSelection);
+    //console.log(computerSelection);
     if (playerSelection === computerSelection)
     {
         return "tie";
@@ -70,5 +71,23 @@ function playRound( playerSelection,computerSelection)
 
 }
 
-const playerSelection = "rock";
-playgame();
+
+
+
+function setplayerselection (choice)
+{
+    
+    playerSelection = choice;
+    document.getElementById("result").innerHTML=playRound(playerSelection,getcomputerchoice())
+    console.log(playRound(playerSelection,getcomputerchoice()))
+    
+}
+
+
+
+
+
+
+
+
+ 

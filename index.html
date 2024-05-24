@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="script.js"></script>
+    <div class="container">
+        <div class="header">
+           rock paper scissor
+        </div>
+        <div class="content">
+            <p>Pick one</p>
+        </div>
+        <div class="body">
+            <div class="sec" >
+                <button onclick="setplayerselection('rock')"   id="rock"></button>
+            </div>
+            <div class="sec" >
+                <button onclick="setplayerselection('paper')" id="paper" ></button>
+            </div>
+            <div class="sec">
+                <button onclick="setplayerselection('scissor')"  id="scissor"></button>
+            </div>
+        </div>
+        <div id="result">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
 </body>
 </html>
